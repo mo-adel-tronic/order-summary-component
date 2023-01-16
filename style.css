@@ -1,0 +1,174 @@
+/*********** Reset ***********************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+
+/************ General *********************/
+@font-face {
+    font-family: 'Red Hat Display', sans-serif;
+    src: url(./fonts/RedHatDisplay-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Red Hat Display', sans-serif;
+    src: url(./fonts/RedHatDisplay-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Red Hat Display', sans-serif;
+    src: url(./fonts/RedHatDisplay-Black.ttf);
+    font-weight: 900;
+}
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --sep-space: 24px;
+    --container: 85%;
+}
+body {
+    background-color: var(--Pale-blue);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+.container {
+    width: var(--container);
+    margin-left: auto;
+    margin-right: auto;
+}
+h2, h3 {
+    color: var(--Dark-blue);
+    font-weight: 900;
+}
+p {
+    color: var(--Desaturated-blue);
+    line-height: 1.6;
+}
+/************* main ******************/
+main {
+    background-color: #fff;
+    width: 87%;
+    margin: calc(var(--sep-space) * 3) auto var(--sep-space);
+    padding-bottom: calc(var(--sep-space) * 0.8);
+    border-radius: 0.625em;
+    -webkit-border-radius: 0.625em;
+    -moz-border-radius: 0.625em;
+    -ms-border-radius: 0.625em;
+    -o-border-radius: 0.625em;
+}
+header img {
+    border-top-left-radius: 0.625em;
+    border-top-right-radius: 0.625em;
+    margin-bottom: calc(var(--sep-space) * 1);
+}
+.card-body {
+    text-align: center;
+}
+.card-body h2 {
+    margin-bottom: calc(var(--sep-space) * 0.8);
+    font-size: 1.3em;
+}
+.card-body p {
+    margin-bottom: calc(var(--sep-space) * 0.8);
+}
+.subscripe {
+    background-color: var(--Very-pale-blue);
+    margin-bottom: calc(var(--sep-space) * 0.8);
+    padding: 20px;
+    border-radius: 0.625em;
+    -webkit-border-radius: 0.625em;
+    -moz-border-radius: 0.625em;
+    -ms-border-radius: 0.625em;
+    -o-border-radius: 0.625em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+.sub-data {
+    display: flex;
+    align-items: center;
+}
+.sub-data img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.subscripe a {
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    font-weight: 700;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.subscripe a:hover {
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+}
+.sub-btn a {
+    display: block;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+.sub-btn a:first-child {
+    color: #fff;
+    background-color: var(--Bright-blue);
+    box-shadow: 0 20px 7px 0 var(--Pale-blue);
+    padding: 20px 10px;
+    margin-bottom: calc(var(--sep-space) * 0.8);
+    border-radius: 0.625em;
+    -webkit-border-radius: 0.625em;
+    -moz-border-radius: 0.625em;
+    -ms-border-radius: 0.625em;
+    -o-border-radius: 0.625em;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.sub-btn a:first-child:hover {
+    background-color: var(--Desaturated-blue);
+}
+.sub-btn a:last-child {
+    color: var(--Desaturated-blue);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 900;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.sub-btn a:last-child:hover {
+    color: var(--Dark-blue);
+}
+
+/*************** footer ************/
+footer { font-size: 11px; text-align: center; }
+footer a { color: hsl(228, 45%, 44%); }
+
+/*********** Media *****************/
+@media screen and (min-width: 900px) {
+    main {
+        width: 41.6666%;
+    }
+}
