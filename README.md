@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/product-preview-card-component-ujPyz6zSiE)
-- Live Site URL: [live site URL here](https://mo-adel-tronic.github.io/product-preview-card-component/)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/order-summary-component-O_6geCHJJw)
+- Live Site URL: [live site URL here](https://mo-adel-tronic.github.io/order-summary-component/)
 
 ## My process
 
